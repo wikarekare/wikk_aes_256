@@ -7,7 +7,7 @@ module WIKK
   # @attr_reader [String] plain_text the decrypted text
   # @attr_reader [String] cipher_text the encrypted text
   class AES_256
-    VERSION = "0.1.0"
+    VERSION = "0.1.1"
     AES_256_CBC = "AES-256-CBC"
     
     attr_reader :plain_text, :cipher_text
@@ -37,7 +37,7 @@ module WIKK
     
     #  @return [String] base64 version of @key
     def key_to_s
-      return [@key].pack('m')
+      return [@key].pack('m').chomp
     end
 
     #  @param [String] turns base64 version of key into AES_256_CBC Symetric Key.
@@ -53,7 +53,7 @@ module WIKK
 
     #  @return [String] return Base64 version of initialization vector @iv 
     def iv_to_s
-      return([@iv].pack('m'))
+      return([@iv].pack('m')).chomp
     end
     
     #  @param [String] turns base64 version of iv into AES_256_CBC initialization vector.
@@ -87,7 +87,7 @@ module WIKK
     #  @return [String] Base64 string representing encrypted source
     def cipher_to_s(unencrypted_source = nil)
       encrypt(unencrypted_source) if(unencrypted_source != nil)
-      return [@cipher_text].pack('m')
+      return [@cipher_text].pack('m').chomp
     end
 
     #Decrypts source using AES 256 CBC, using @key and @iv

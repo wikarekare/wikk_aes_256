@@ -7,7 +7,7 @@ module WIKK
   # @attr_reader [String] plain_text the decrypted text
   # @attr_reader [String] cipher_text the encrypted text
   class AES_256
-    VERSION = "0.1.1"
+    VERSION = "0.1.2"
     AES_256_CBC = "AES-256-CBC"
     
     attr_reader :plain_text, :cipher_text
@@ -20,6 +20,8 @@ module WIKK
     def initialize(key_string = nil, iv_string = nil)
       if(key_string == nil)
         gen_key
+        gen_iv
+      elsif gen_iv == nil
         gen_iv
       else
         str_to_key(key_string)

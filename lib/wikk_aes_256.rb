@@ -21,7 +21,7 @@ module WIKK
       if(key_string == nil)
         gen_key
         gen_iv
-      elsif gen_iv == nil
+      elsif iv_string == nil
         gen_iv
       else
         str_to_key(key_string)

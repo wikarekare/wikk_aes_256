@@ -7,7 +7,7 @@ module WIKK
   # @attr_reader [String] plain_text the decrypted text
   # @attr_reader [String] cipher_text the encrypted text
   class AES_256
-    VERSION = "0.1.2"
+    VERSION = "0.1.4"
     AES_256_CBC = "AES-256-CBC"
     
     attr_reader :plain_text, :cipher_text
@@ -18,13 +18,15 @@ module WIKK
     #  @param iv_string [String ] optional base64 iv (initial vector) to be used in the encryption or decryption
     #    Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().
     def initialize(key_string = nil, iv_string = nil)
-      if(key_string == nil)
+      if key_string == nil
         gen_key
-        gen_iv
-      elsif iv_string == nil
-        gen_iv
       else
         str_to_key(key_string)
+      end
+
+      if iv_string == nil
+        gen_iv
+      else
         str_to_iv(iv_string)
       end
     end

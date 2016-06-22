@@ -1,4 +1,4 @@
 #!/bin/sh
 #Copy up to rubygem.org
-/usr/local/bin/rake release VERSION=0.1.2 #--trace
+/usr/local/bin/rake release VERSION=0.1.4 #--trace
 

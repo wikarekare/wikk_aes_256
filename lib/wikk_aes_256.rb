@@ -115,23 +115,22 @@ module WIKK
     #Generates a new key using Digest SHA256 in @key.
     #  @return [String] Base64 encoded string, @key
   	def self.gen_key_to_s
-  	  aes = self.new
-  	  return aes.key_to_s
+        digest = Digest::SHA256.new
+        digest.update("symetric key")
+        return ([digest.digest].pack('m')).chomp
     end
 
     #Generate random AES_256_CBC initialization vector.
     #  @return [String] Base64 encoded initialization vector @iv
   	def self.gen_iv_to_s
-  	  aes = self.new
-  	  return aes.iv_to_s
-    end
+      return ([OpenSSL::Cipher::Cipher.new(AES_256_CBC).random_iv].pack('m')).chomp
+    end   
     
     #Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv
     #  @return [String] Base64 encoded string, @key
     #  @return [String] Base64 encoded initialization vector @iv
     def self.gen_key_iv_to_s
-  	  aes = self.new
-  	  return aes.key_to_s, aes.iv_to_s
+  	  return self.gen_key_to_s, self.gen_iv_to_s
     end
       
     #Encrypts source using AES 256 CBC, using @key and @iv

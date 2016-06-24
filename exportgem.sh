@@ -1,4 +1,6 @@
 #!/bin/sh
 #Copy up to rubygem.org
-/usr/local/bin/rake release VERSION=0.1.4 #--trace
+VERSION="0.1.5"
+git tag -a ${VERSION} -m "Gem release ${VERSION}"
+/usr/local/bin/rake release VERSION=${VERSION} #--trace
 

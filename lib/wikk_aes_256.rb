@@ -52,7 +52,7 @@ module WIKK
     #Generate random AES_256_CBC initialization vector.
     #  @return [String] Binary initialization vector @iv
     def gen_iv
-      return (@iv = OpenSSL::Cipher::Cipher.new(AES_256_CBC).random_iv)
+      return (@iv = OpenSSL::Cipher.new(AES_256_CBC).random_iv)
     end   
 
     #  @return [String] return Base64 version of initialization vector @iv 
@@ -77,7 +77,7 @@ module WIKK
     #  @return [String] Binary string representing encrypted source
     def encrypt(unencrypted_source)
       unencrypted_source = StringIO.new(unencrypted_source) if(unencrypted_source.class == String)
-      aes = OpenSSL::Cipher::Cipher.new(AES_256_CBC)
+      aes = OpenSSL::Cipher.new(AES_256_CBC)
       aes.encrypt
       aes.key = @key
       aes.iv = @iv
@@ -101,7 +101,7 @@ module WIKK
     def decrypt(encrypted_source, base64_source = false)
       encrypted_source = StringIO.new(encrypted_source) if(encrypted_source.class == String)
       read_count = base64_source ? 5464:4096
-      decode_cipher = OpenSSL::Cipher::Cipher.new(AES_256_CBC)
+      decode_cipher = OpenSSL::Cipher.new(AES_256_CBC)
       decode_cipher.decrypt
       decode_cipher.key = @key
       decode_cipher.iv = @iv
@@ -123,7 +123,7 @@ module WIKK
     #Generate random AES_256_CBC initialization vector.
     #  @return [String] Base64 encoded initialization vector @iv
   	def self.gen_iv_to_s
-      return ([OpenSSL::Cipher::Cipher.new(AES_256_CBC).random_iv].pack('m')).chomp
+      return ([OpenSSL::Cipher.new(AES_256_CBC).random_iv].pack('m')).chomp
     end   
     
     #Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv

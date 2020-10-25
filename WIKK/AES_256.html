@@ -212,7 +212,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#cipher_to_s-class_method" title="cipher_to_s (class method)">.<strong>cipher_to_s</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; Object </a>
+      <a href="#cipher_to_s-class_method" title="cipher_to_s (class method)">.<strong>cipher_to_s</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; String </a>
     
 
     
@@ -227,7 +227,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Converts encrypted source String, @cipher_text, into Base64 String @param unencrypted_source [String|File] which must be present, as AES_256 class is created here.</p>
+<p>Converts encrypted source String, @cipher_text, into Base64 String.</p>
 </div></span>
   
 </li>
@@ -236,7 +236,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#decrypt-class_method" title="decrypt (class method)">.<strong>decrypt</strong>(encrypted_source, base64_source = false, key_string = nil, iv_string = nil)  &#x21d2; Object </a>
+      <a href="#decrypt-class_method" title="decrypt (class method)">.<strong>decrypt</strong>(encrypted_source, base64_source = false, key_string = nil, iv_string = nil)  &#x21d2; String </a>
     
 
     
@@ -251,7 +251,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Creates an AES class and then Decrypts source using AES 256 CBC, using @key and @iv @param encrypted_source [String|File] @param base64_source [Boolean] if true, then source is assumed to be base64 encoded.</p>
+<p>Creates an AES class and then Decrypts source using AES 256 CBC, using @key and @iv.</p>
 </div></span>
   
 </li>
@@ -260,7 +260,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#encrypt-class_method" title="encrypt (class method)">.<strong>encrypt</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; Object </a>
+      <a href="#encrypt-class_method" title="encrypt (class method)">.<strong>encrypt</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; String </a>
     
 
     
@@ -275,7 +275,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Encrypts source using AES 256 CBC, using @key and @iv @param unencrypted_source [String|File] @param key_string [String] optional base64 key to be used in encryption or decryption.</p>
+<p>Encrypts source using AES 256 CBC, using @key and @iv.</p>
 </div></span>
   
 </li>
@@ -284,7 +284,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#gen_iv_to_s-class_method" title="gen_iv_to_s (class method)">.<strong>gen_iv_to_s</strong>  &#x21d2; Object </a>
+      <a href="#gen_iv_to_s-class_method" title="gen_iv_to_s (class method)">.<strong>gen_iv_to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -308,7 +308,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#gen_key_iv_to_s-class_method" title="gen_key_iv_to_s (class method)">.<strong>gen_key_iv_to_s</strong>  &#x21d2; Object </a>
+      <a href="#gen_key_iv_to_s-class_method" title="gen_key_iv_to_s (class method)">.<strong>gen_key_iv_to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -323,7 +323,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv @return [String] Base64 encoded string, @key @return [String] Base64 encoded initialization vector @iv.</p>
+<p>Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv.</p>
 </div></span>
   
 </li>
@@ -332,7 +332,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#gen_key_to_s-class_method" title="gen_key_to_s (class method)">.<strong>gen_key_to_s</strong>  &#x21d2; Object </a>
+      <a href="#gen_key_to_s-class_method" title="gen_key_to_s (class method)">.<strong>gen_key_to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -365,7 +365,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#cipher_to_s-instance_method" title="#cipher_to_s (instance method)">#<strong>cipher_to_s</strong>(unencrypted_source = nil)  &#x21d2; Object </a>
+      <a href="#cipher_to_s-instance_method" title="#cipher_to_s (instance method)">#<strong>cipher_to_s</strong>(unencrypted_source = nil)  &#x21d2; String </a>
     
 
     
@@ -380,7 +380,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Converts encrypted source String, @cipher_text, into Base64 String @param unencrypted_source [String|File] If present, then this source is encrypted, otherwise assumes already encrypted.</p>
+<p>Converts encrypted source String, @cipher_text, into Base64 String.</p>
 </div></span>
   
 </li>
@@ -389,7 +389,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#decrypt-instance_method" title="#decrypt (instance method)">#<strong>decrypt</strong>(encrypted_source, base64_source = false)  &#x21d2; Object </a>
+      <a href="#decrypt-instance_method" title="#decrypt (instance method)">#<strong>decrypt</strong>(encrypted_source, base64_source = false)  &#x21d2; String </a>
     
 
     
@@ -404,7 +404,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Decrypts source using AES 256 CBC, using @key and @iv @param encrypted_source [String|File] @param base64_source [Boolean] if true, then source is assumed to be base64 encoded.</p>
+<p>Decrypts source using AES 256 CBC, using @key and @iv.</p>
 </div></span>
   
 </li>
@@ -413,7 +413,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#encrypt-instance_method" title="#encrypt (instance method)">#<strong>encrypt</strong>(unencrypted_source)  &#x21d2; Object </a>
+      <a href="#encrypt-instance_method" title="#encrypt (instance method)">#<strong>encrypt</strong>(unencrypted_source)  &#x21d2; String </a>
     
 
     
@@ -428,7 +428,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Encrypts source using AES 256 CBC, using @key and @iv @param unencrypted_source [String|File] @return [String] Binary string representing encrypted source.</p>
+<p>Encrypts source using AES 256 CBC, using @key and @iv.</p>
 </div></span>
   
 </li>
@@ -437,7 +437,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#gen_iv-instance_method" title="#gen_iv (instance method)">#<strong>gen_iv</strong>  &#x21d2; Object </a>
+      <a href="#gen_iv-instance_method" title="#gen_iv (instance method)">#<strong>gen_iv</strong>  &#x21d2; String </a>
     
 
     
@@ -461,7 +461,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#gen_key-instance_method" title="#gen_key (instance method)">#<strong>gen_key</strong>  &#x21d2; Object </a>
+      <a href="#gen_key-instance_method" title="#gen_key (instance method)">#<strong>gen_key</strong>  &#x21d2; String </a>
     
 
     
@@ -502,7 +502,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Initialize @param key_string [String] optional base64 key to be used in encryption or decryption.</p>
+<p>Initialize.</p>
 </div></span>
   
 </li>
@@ -511,7 +511,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#iv_to_s-instance_method" title="#iv_to_s (instance method)">#<strong>iv_to_s</strong>  &#x21d2; Object </a>
+      <a href="#iv_to_s-instance_method" title="#iv_to_s (instance method)">#<strong>iv_to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -526,7 +526,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>@return [String] return Base64 version of initialization vector @iv.</p>
+<p>Convert initialization vector to base64 string.</p>
 </div></span>
   
 </li>
@@ -535,7 +535,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#key_iv_to_s-instance_method" title="#key_iv_to_s (instance method)">#<strong>key_iv_to_s</strong>  &#x21d2; Object </a>
+      <a href="#key_iv_to_s-instance_method" title="#key_iv_to_s (instance method)">#<strong>key_iv_to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -550,7 +550,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>@return [String] base64 version of @key @return [String] return Base64 version of initialization vector @iv.</p>
+<p>Convert key and the initialization vector into base64 strings.</p>
 </div></span>
   
 </li>
@@ -559,7 +559,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#key_to_s-instance_method" title="#key_to_s (instance method)">#<strong>key_to_s</strong>  &#x21d2; Object </a>
+      <a href="#key_to_s-instance_method" title="#key_to_s (instance method)">#<strong>key_to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -574,7 +574,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>@return [String] base64 version of @key.</p>
+<p>Convert key to a base64 string.</p>
 </div></span>
   
 </li>
@@ -583,7 +583,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#str_to_iv-instance_method" title="#str_to_iv (instance method)">#<strong>str_to_iv</strong>(base64_iv_string)  &#x21d2; Object </a>
+      <a href="#str_to_iv-instance_method" title="#str_to_iv (instance method)">#<strong>str_to_iv</strong>(base64_iv_string)  &#x21d2; Array </a>
     
 
     
@@ -598,7 +598,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>@param [String] turns base64 version of iv into AES_256_CBC initialization vector.</p>
+<p>Convert base64 string into an initialization vector.</p>
 </div></span>
   
 </li>
@@ -622,7 +622,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>@param [String] turns base64 version of key into AES_256_CBC Symetric Key.</p>
+<p>Convert a base64 string into a key.</p>
 </div></span>
   
 </li>
@@ -646,13 +646,53 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Initialize  @param key_string [String] optional base64 key to be used in encryption or decryption.  if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()  @param iv_string [String ] optional base64 iv (initial vector) to be used in the encryption or decryption  Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().</p>
+<p>Initialize</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>key_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 key to be used in encryption or decryption. if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>iv_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 iv (initial vector) to be used in the encryption or decryption Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -660,8 +700,6 @@
       <pre class="lines">
 
 
-20
-21
 22
 23
 24
@@ -672,10 +710,12 @@
 29
 30
 31
-32</pre>
+32
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 22</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_key_string'>key_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_key_string'>key_string</span> <span class='op'>==</span> <span class='kw'>nil</span>
@@ -746,12 +786,12 @@
       <pre class="lines">
 
 
-9
 10
-11</pre>
+11
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cipher_text'>cipher_text</span>
   <span class='ivar'>@cipher_text</span>
@@ -807,12 +847,12 @@
       <pre class="lines">
 
 
-9
 10
-11</pre>
+11
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_plain_text'>plain_text</span>
   <span class='ivar'>@plain_text</span>
@@ -832,7 +872,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="cipher_to_s-class_method">
   
-    .<strong>cipher_to_s</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; <tt>Object</tt> 
+    .<strong>cipher_to_s</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -841,13 +881,115 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Converts encrypted source String, @cipher_text, into Base64 String  @param unencrypted_source [String|File] which must be present, as AES_256 class is created here.  @param key_string [String] optional base64 key to be used in encryption or decryption.  if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()  @param iv_string [String ] optional base64 iv (initial vector) to be used in the encryption or decryption  Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().  @return [String] Base64 string representing encrypted source  @return [String] base64 key, @key, so later decryption can be done  @return [String] base64 initial vector, @iv, so later decryption can be done</p>
+<p>Converts encrypted source String, @cipher_text, into Base64 String</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>unencrypted_source</span>
+      
+      
+        <span class='type'>(<tt>String|File</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>which must be present, as AES_256 class is created here.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>key_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 key to be used in encryption or decryption. if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>iv_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 iv (initial vector) to be used in the encryption or decryption Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 string representing encrypted source</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 key, @key, so later decryption can be done</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 initial vector, @iv, so later decryption can be done</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -855,13 +997,13 @@
       <pre class="lines">
 
 
-159
-160
-161
-162</pre>
+181
+182
+183
+184</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 159</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 181</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_cipher_to_s'>cipher_to_s</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span><span class='comma'>,</span> <span class='id identifier rubyid_key_string'>key_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_aes'>aes</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_key_string'>key_string</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span><span class='rparen'>)</span>
@@ -875,7 +1017,7 @@
       <div class="method_details ">
   <h3 class="signature " id="decrypt-class_method">
   
-    .<strong>decrypt</strong>(encrypted_source, base64_source = false, key_string = nil, iv_string = nil)  &#x21d2; <tt>Object</tt> 
+    .<strong>decrypt</strong>(encrypted_source, base64_source = false, key_string = nil, iv_string = nil)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -884,13 +1026,100 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Creates an AES class and then Decrypts source using AES 256 CBC, using @key and @iv  @param encrypted_source [String|File]  @param base64_source [Boolean] if true, then source is assumed to be base64 encoded.  @param key_string [String] optional base64 key to be used in encryption or decryption.  if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()  @param iv_string [String ] optional base64 iv (initial vector) to be used in the encryption or decryption  Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().  @return [String] String representing the original unencypted source</p>
+<p>Creates an AES class and then Decrypts source using AES 256 CBC, using @key and @iv</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>encrypted_source</span>
+      
+      
+        <span class='type'>(<tt>String|File</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>base64_source</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>false</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if true, then source is assumed to be base64 encoded.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>key_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 key to be used in encryption or decryption. if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>iv_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 iv (initial vector) to be used in the encryption or decryption Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>String representing the original unencypted source</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -898,13 +1127,13 @@
       <pre class="lines">
 
 
-172
-173
-174
-175</pre>
+195
+196
+197
+198</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 172</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 195</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_decrypt'>decrypt</span><span class='lparen'>(</span><span class='id identifier rubyid_encrypted_source'>encrypted_source</span><span class='comma'>,</span> <span class='id identifier rubyid_base64_source'>base64_source</span><span class='op'>=</span><span class='kw'>false</span><span class='comma'>,</span> <span class='id identifier rubyid_key_string'>key_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_aes'>aes</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_key_string'>key_string</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span><span class='rparen'>)</span>
@@ -918,7 +1147,7 @@
       <div class="method_details ">
   <h3 class="signature " id="encrypt-class_method">
   
-    .<strong>encrypt</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; <tt>Object</tt> 
+    .<strong>encrypt</strong>(unencrypted_source, key_string = nil, iv_string = nil)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -927,13 +1156,110 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Encrypts source using AES 256 CBC, using @key and @iv  @param unencrypted_source [String|File]  @param key_string [String] optional base64 key to be used in encryption or decryption.  if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()  @param iv_string [String ] optional base64 iv (initial vector) to be used in the encryption or decryption  Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().  @return [String] Binary string representing encrypted source  @return [String] base64 key, @key, so later decryption can be done  @return [String] base64 initial vector, @iv, so later decryption can be done</p>
+<p>Encrypts source using AES 256 CBC, using @key and @iv</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>unencrypted_source</span>
+      
+      
+        <span class='type'>(<tt>String|File</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>key_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 key to be used in encryption or decryption. if nil, then key and iv are generated automatically. Recover the key with key_to_s(), or key_iv_to_s()</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>iv_string</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>optional base64 iv (initial vector) to be used in the encryption or decryption Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Binary string representing encrypted source</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 key, @key, so later decryption can be done</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 initial vector, @iv, so later decryption can be done</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -941,13 +1267,13 @@
       <pre class="lines">
 
 
-145
-146
-147
-148</pre>
+166
+167
+168
+169</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 145</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 166</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_encrypt'>encrypt</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span><span class='comma'>,</span> <span class='id identifier rubyid_key_string'>key_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_aes'>aes</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_key_string'>key_string</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_string'>iv_string</span><span class='rparen'>)</span>
@@ -961,7 +1287,7 @@
       <div class="method_details ">
   <h3 class="signature " id="gen_iv_to_s-class_method">
   
-    .<strong>gen_iv_to_s</strong>  &#x21d2; <tt>Object</tt> 
+    .<strong>gen_iv_to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -970,13 +1296,31 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Generate random AES_256_CBC initialization vector.  @return [String] Base64 encoded initialization vector @iv</p>
+<p>Generate random AES_256_CBC initialization vector.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 encoded initialization vector @iv</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -984,12 +1328,12 @@
       <pre class="lines">
 
 
-125
-126
-127</pre>
+144
+145
+146</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 144</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_gen_iv_to_s'>gen_iv_to_s</span>
   <span class='kw'>return</span> <span class='lparen'>(</span><span class='lbracket'>[</span><span class='const'>OpenSSL</span><span class='op'>::</span><span class='const'>Cipher</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#AES_256_CBC-constant" title="WIKK::AES_256::AES_256_CBC (constant)">AES_256_CBC</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_random_iv'>random_iv</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_pack'>pack</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>m</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
@@ -1002,7 +1346,7 @@
       <div class="method_details ">
   <h3 class="signature " id="gen_key_iv_to_s-class_method">
   
-    .<strong>gen_key_iv_to_s</strong>  &#x21d2; <tt>Object</tt> 
+    .<strong>gen_key_iv_to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1011,13 +1355,45 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv  @return [String] Base64 encoded string, @key  @return [String] Base64 encoded initialization vector @iv</p>
+<p>Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 encoded string, @key</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 encoded initialization vector @iv</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1025,12 +1401,12 @@
       <pre class="lines">
 
 
-132
-133
-134</pre>
+152
+153
+154</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 132</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 152</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_gen_key_iv_to_s'>gen_key_iv_to_s</span>
  <span class='kw'>return</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_gen_key_to_s'>gen_key_to_s</span><span class='comma'>,</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_gen_iv_to_s'>gen_iv_to_s</span>
@@ -1043,7 +1419,7 @@
       <div class="method_details ">
   <h3 class="signature " id="gen_key_to_s-class_method">
   
-    .<strong>gen_key_to_s</strong>  &#x21d2; <tt>Object</tt> 
+    .<strong>gen_key_to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1052,13 +1428,31 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Generates a new key using Digest SHA256 in @key.  @return [String] Base64 encoded string, @key</p>
+<p>Generates a new key using Digest SHA256 in @key.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 encoded string, @key</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1066,14 +1460,14 @@
       <pre class="lines">
 
 
-117
-118
-119
-120
-121</pre>
+135
+136
+137
+138
+139</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 117</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_gen_key_to_s'>gen_key_to_s</span>
     <span class='id identifier rubyid_digest'>digest</span> <span class='op'>=</span> <span class='const'>Digest</span><span class='op'>::</span><span class='const'>SHA256</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -1094,7 +1488,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="cipher_to_s-instance_method">
   
-    #<strong>cipher_to_s</strong>(unencrypted_source = nil)  &#x21d2; <tt>Object</tt> 
+    #<strong>cipher_to_s</strong>(unencrypted_source = nil)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1103,13 +1497,53 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Converts encrypted source String, @cipher_text, into Base64 String  @param unencrypted_source [String|File] If present, then this source is encrypted, otherwise assumes already encrypted.  @return [String] Base64 string representing encrypted source</p>
+<p>Converts encrypted source String, @cipher_text, into Base64 String</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>unencrypted_source</span>
+      
+      
+        <span class='type'>(<tt>String|File</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>If present, then this source is encrypted, otherwise assumes already encrypted.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 string representing encrypted source</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1117,13 +1551,13 @@
       <pre class="lines">
 
 
-92
-93
-94
-95</pre>
+108
+109
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 108</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cipher_to_s'>cipher_to_s</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_encrypt'>encrypt</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span><span class='rparen'>)</span> <span class='kw'>if</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span> <span class='op'>!=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
@@ -1137,7 +1571,7 @@
       <div class="method_details ">
   <h3 class="signature " id="decrypt-instance_method">
   
-    #<strong>decrypt</strong>(encrypted_source, base64_source = false)  &#x21d2; <tt>Object</tt> 
+    #<strong>decrypt</strong>(encrypted_source, base64_source = false)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1146,13 +1580,64 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Decrypts source using AES 256 CBC, using @key and @iv  @param encrypted_source [String|File]  @param base64_source [Boolean] if true, then source is assumed to be base64 encoded.  @return [String] String representing the original unencypted source</p>
+<p>Decrypts source using AES 256 CBC, using @key and @iv</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>encrypted_source</span>
+      
+      
+        <span class='type'>(<tt>String|File</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>base64_source</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>false</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if true, then source is assumed to be base64 encoded.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>String representing the original unencypted source</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1160,22 +1645,22 @@
       <pre class="lines">
 
 
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113</pre>
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_decrypt'>decrypt</span><span class='lparen'>(</span><span class='id identifier rubyid_encrypted_source'>encrypted_source</span><span class='comma'>,</span> <span class='id identifier rubyid_base64_source'>base64_source</span> <span class='op'>=</span> <span class='kw'>false</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_encrypted_source'>encrypted_source</span> <span class='op'>=</span> <span class='const'>StringIO</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_encrypted_source'>encrypted_source</span><span class='rparen'>)</span> <span class='kw'>if</span><span class='lparen'>(</span><span class='id identifier rubyid_encrypted_source'>encrypted_source</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>==</span> <span class='const'>String</span><span class='rparen'>)</span>
@@ -1198,7 +1683,7 @@
       <div class="method_details ">
   <h3 class="signature " id="encrypt-instance_method">
   
-    #<strong>encrypt</strong>(unencrypted_source)  &#x21d2; <tt>Object</tt> 
+    #<strong>encrypt</strong>(unencrypted_source)  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1207,13 +1692,46 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Encrypts source using AES 256 CBC, using @key and @iv  @param unencrypted_source [String|File]  @return [String] Binary string representing encrypted source</p>
+<p>Encrypts source using AES 256 CBC, using @key and @iv</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>unencrypted_source</span>
+      
+      
+        <span class='type'>(<tt>String|File</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Binary string representing encrypted source</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1221,19 +1739,19 @@
       <pre class="lines">
 
 
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87</pre>
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_encrypt'>encrypt</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span> <span class='op'>=</span> <span class='const'>StringIO</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span><span class='rparen'>)</span> <span class='kw'>if</span><span class='lparen'>(</span><span class='id identifier rubyid_unencrypted_source'>unencrypted_source</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='op'>==</span> <span class='const'>String</span><span class='rparen'>)</span>
@@ -1253,7 +1771,7 @@
       <div class="method_details ">
   <h3 class="signature " id="gen_iv-instance_method">
   
-    #<strong>gen_iv</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>gen_iv</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1262,13 +1780,31 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Generate random AES_256_CBC initialization vector.  @return [String] Binary initialization vector @iv</p>
+<p>Generate random AES_256_CBC initialization vector.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Binary initialization vector @iv</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1276,12 +1812,12 @@
       <pre class="lines">
 
 
-54
-55
-56</pre>
+62
+63
+64</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_gen_iv'>gen_iv</span>
   <span class='kw'>return</span> <span class='lparen'>(</span><span class='ivar'>@iv</span> <span class='op'>=</span> <span class='const'>OpenSSL</span><span class='op'>::</span><span class='const'>Cipher</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#AES_256_CBC-constant" title="WIKK::AES_256::AES_256_CBC (constant)">AES_256_CBC</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_random_iv'>random_iv</span><span class='rparen'>)</span>
@@ -1294,7 +1830,7 @@
       <div class="method_details ">
   <h3 class="signature " id="gen_key-instance_method">
   
-    #<strong>gen_key</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>gen_key</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1303,13 +1839,31 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Generates a new key using Digest SHA256 in @key.  @return [String] Binary string, @key</p>
+<p>Generates a new key using Digest SHA256 in @key.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Binary string, @key</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1317,14 +1871,14 @@
       <pre class="lines">
 
 
-36
-37
-38
 39
-40</pre>
+40
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_gen_key'>gen_key</span>
   <span class='id identifier rubyid_digest'>digest</span> <span class='op'>=</span> <span class='const'>Digest</span><span class='op'>::</span><span class='const'>SHA256</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
@@ -1339,7 +1893,7 @@
       <div class="method_details ">
   <h3 class="signature " id="iv_to_s-instance_method">
   
-    #<strong>iv_to_s</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>iv_to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1348,13 +1902,31 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>@return [String] return Base64 version of initialization vector @iv</p>
+<p>Convert initialization vector to base64 string</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>return Base64 version of initialization vector @iv</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1362,12 +1934,12 @@
       <pre class="lines">
 
 
-59
-60
-61</pre>
+69
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_iv_to_s'>iv_to_s</span>
   <span class='kw'>return</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='ivar'>@iv</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_pack'>pack</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>m</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
@@ -1380,7 +1952,7 @@
       <div class="method_details ">
   <h3 class="signature " id="key_iv_to_s-instance_method">
   
-    #<strong>key_iv_to_s</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>key_iv_to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1389,13 +1961,45 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>@return [String] base64 version of @key  @return [String] return Base64 version of initialization vector @iv</p>
+<p>Convert key and the initialization vector into base64 strings</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 version of @key</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>return Base64 version of initialization vector @iv</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1403,12 +2007,12 @@
       <pre class="lines">
 
 
-71
-72
-73</pre>
+85
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_key_iv_to_s'>key_iv_to_s</span>
   <span class='kw'>return</span> <span class='id identifier rubyid_key_to_s'>key_to_s</span><span class='comma'>,</span> <span class='id identifier rubyid_iv_to_s'>iv_to_s</span>
@@ -1421,7 +2025,7 @@
       <div class="method_details ">
   <h3 class="signature " id="key_to_s-instance_method">
   
-    #<strong>key_to_s</strong>  &#x21d2; <tt>Object</tt> 
+    #<strong>key_to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1430,13 +2034,31 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>@return [String] base64 version of @key</p>
+<p>Convert key to a base64 string</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 version of @key</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1444,12 +2066,12 @@
       <pre class="lines">
 
 
-43
-44
-45</pre>
+48
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_key_to_s'>key_to_s</span>
   <span class='kw'>return</span> <span class='lbracket'>[</span><span class='ivar'>@key</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_pack'>pack</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>m</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span>
@@ -1462,7 +2084,7 @@
       <div class="method_details ">
   <h3 class="signature " id="str_to_iv-instance_method">
   
-    #<strong>str_to_iv</strong>(base64_iv_string)  &#x21d2; <tt>Object</tt> 
+    #<strong>str_to_iv</strong>(base64_iv_string)  &#x21d2; <tt>Array</tt> 
   
 
   
@@ -1471,13 +2093,51 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>@param [String] turns base64 version of iv into AES_256_CBC initialization vector.  @return [Array] AES_256_CBC initialization vector @iv.</p>
+<p>Convert base64 string into an initialization vector</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>turns</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 version of iv into AES_256_CBC initialization vector.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>AES_256_CBC initialization vector @iv.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -1485,12 +2145,12 @@
       <pre class="lines">
 
 
-65
-66
-67</pre>
+77
+78
+79</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_str_to_iv'>str_to_iv</span><span class='lparen'>(</span><span class='id identifier rubyid_base64_iv_string'>base64_iv_string</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='lparen'>(</span><span class='ivar'>@iv</span> <span class='op'>=</span> <span class='id identifier rubyid_base64_iv_string'>base64_iv_string</span><span class='period'>.</span><span class='id identifier rubyid_unpack'>unpack</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>m</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='rparen'>)</span>
@@ -1512,13 +2172,33 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>@param [String] turns base64 version of key into AES_256_CBC Symetric Key.</p>
+<p>Convert a base64 string into a key</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>turns</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>base64 version of key into AES_256_CBC Symetric Key.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -1526,12 +2206,12 @@
       <pre class="lines">
 
 
-48
-49
-50</pre>
+55
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'lib/wikk_aes_256.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_str_to_key'>str_to_key</span><span class='lparen'>(</span><span class='id identifier rubyid_base64_keystring'>base64_keystring</span><span class='rparen'>)</span>
   <span class='kw'>return</span><span class='lparen'>(</span> <span class='ivar'>@key</span> <span class='op'>=</span> <span class='id identifier rubyid_base64_keystring'>base64_keystring</span><span class='period'>.</span><span class='id identifier rubyid_unpack'>unpack</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>m</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='rparen'>)</span>
@@ -1546,7 +2226,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun Oct 25 13:22:07 2020 by
+  Generated on Sun Oct 25 21:59:52 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.25 (ruby-2.7.1).
 </div>

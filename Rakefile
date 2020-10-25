@@ -1,5 +1,4 @@
 # -*- ruby -*-
-
 require 'rubygems'
 require 'hoe'
 Hoe.plugin :yard

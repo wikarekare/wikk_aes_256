@@ -1,8 +1,8 @@
-# wikk_aes
+# wikk_aes_256
 
-* http://wikarekare.github.com/wikk_aes/
-* Source https://github.com/wikarekare/wikk_aes
-* Gem https://rubygems.org/gems/wikk_aes
+* Docs :: https://wikarekare.github.io/wikk_aes_256/
+* Source :: https://github.com/wikarekare/wikk_aes_256
+* Gem :: https://rubygems.org/gems/wikk_aes_256
 
 ## DESCRIPTION:
 

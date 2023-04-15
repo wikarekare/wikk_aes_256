@@ -19,7 +19,10 @@ end
 def test_class_lvl_encryption
   File.open(__dir__ + '/data/testfile.txt', 'r') do |fd|
     @et2, @key, @iv = WIKK::AES_256.cipher_to_s(fd)
+    puts '******** encrypted text *********'
+    puts @et2
   end
+  puts '******** Clear text *********'
   puts WIKK::AES_256.decrypt(@et2, true, @key, @iv)
 end
 

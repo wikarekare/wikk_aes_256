@@ -1,5 +1,6 @@
 require 'openssl'
 require 'digest/sha2'
+require 'securerandom'
 require 'base64'
 require 'stringio'
 
@@ -10,7 +11,7 @@ module WIKK
   # @attr_reader [String] plain_text the decrypted text
   # @attr_reader [String] cipher_text the encrypted text
   class AES_256
-    VERSION = '0.1.7'
+    VERSION = '0.1.8'
     AES_256_CBC = 'AES-256-CBC'
 
     attr_reader :plain_text, :cipher_text
@@ -35,13 +36,11 @@ module WIKK
       end
     end
 
-    # Generates a new key using Digest SHA256 in @key.
+    # Generates a new binary key in @key, using SecureRandom.
     #
     # @return [String] Binary string, @key
-    def gen_key
-      digest = Digest::SHA256.new
-      digest.update('symetric key')
-      return (@key = digest.digest)
+    def gen_key(key_length = 32)
+      @key = SecureRandom.gen_random(key_length)
     end
 
     # Convert key to a base64 string
@@ -132,13 +131,11 @@ module WIKK
       @plain_text << decode_cipher.final
     end
 
-    # Generates a new key using Digest SHA256 in @key.
+    # Generates a random base64 key.
     #
     # @return [String] Base64 encoded string, @key
-    def self.gen_key_to_s
-      digest = Digest::SHA256.new
-      digest.update('symetric key')
-      return [ digest.digest ].pack('m').chomp
+    def self.gen_key_to_s(key_length = 32)
+      SecureRandom.base64(key_length)
     end
 
     # Generate random AES_256_CBC initialization vector.
@@ -148,7 +145,7 @@ module WIKK
       return [ OpenSSL::Cipher.new(AES_256_CBC).random_iv ].pack('m').chomp
     end
 
-    # Generates a new key using Digest SHA256 in @key, and random AES_256_CBC initialization vector in @iv
+    # Generates a new key using Random string in @key, and random AES_256_CBC initialization vector in @iv
     #
     # @return [String,String] Base64 encoded string, @key;
     #                  Base64 encoded initialization vector @iv

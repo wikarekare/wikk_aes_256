@@ -1,5 +1,4 @@
 require 'openssl'
-require 'digest/sha2'
 require 'securerandom'
 require 'base64'
 require 'stringio'
@@ -24,7 +23,7 @@ module WIKK
     #    Overwritten by auto generated iv, if key_string is nil. Recover with iv_to_str() or key_iv_to_s().
     def initialize(key_string = nil, iv_string = nil)
       if key_string.nil?
-        gen_key
+        gen_key(key_length: 32)
       else
         str_to_key(key_string)
       end
@@ -39,7 +38,7 @@ module WIKK
     # Generates a new binary key in @key, using SecureRandom.
     #
     # @return [String] Binary string, @key
-    def gen_key(key_length = 32)
+    def gen_key(key_length: 32)
       @key = SecureRandom.gen_random(key_length)
     end
 
@@ -134,7 +133,7 @@ module WIKK
     # Generates a random base64 key.
     #
     # @return [String] Base64 encoded string, @key
-    def self.gen_key_to_s(key_length = 32)
+    def self.gen_key_to_s(key_length: 32)
       SecureRandom.base64(key_length)
     end
 
